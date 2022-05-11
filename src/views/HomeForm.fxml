@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="MainContext" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="183.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
@@ -31,7 +30,7 @@
          </font>
       </Label>
       <JFXButton layoutX="195.0" layoutY="436.0" onAction="#btnCustomer" prefHeight="49.0" prefWidth="127.0" text="Customer" />
-      <JFXButton layoutX="537.0" layoutY="436.0" prefHeight="49.0" prefWidth="127.0" text="Item" />
+      <JFXButton layoutX="537.0" layoutY="436.0" onAction="#btnItem" prefHeight="49.0" prefWidth="127.0" text="Item" />
       <JFXButton layoutX="880.0" layoutY="436.0" prefHeight="49.0" prefWidth="127.0" text="User" />
    </children>
 </AnchorPane>

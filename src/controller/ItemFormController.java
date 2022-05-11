@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class CustomerFormController {
+public class ItemFormController {
     public AnchorPane mainContext;
 
     public void btnSaveCustomer(ActionEvent actionEvent) {

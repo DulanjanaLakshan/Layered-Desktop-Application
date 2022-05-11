@@ -20,4 +20,12 @@ public class HomeFormController {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void btnItem(ActionEvent actionEvent) throws IOException {
+        Parent load = FXMLLoader.load(getClass().getResource("../views/ItemForm.fxml"));
+        Scene scene = new Scene(load);
+        Stage stage = (Stage) MainContext.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 }
