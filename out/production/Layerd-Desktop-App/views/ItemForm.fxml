@@ -13,27 +13,27 @@
 
 <AnchorPane fx:id="mainContext" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
    <children>
-      <TextField layoutX="64.0" layoutY="98.0" prefHeight="34.0" prefWidth="163.0" promptText="Enter Customer Id">
+      <TextField layoutX="64.0" layoutY="98.0" prefHeight="34.0" prefWidth="163.0" promptText="Enter Item Id">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="246.0" layoutY="98.0" prefHeight="34.0" prefWidth="395.0" promptText="Enter Customer Name">
+      <TextField layoutX="246.0" layoutY="98.0" prefHeight="34.0" prefWidth="395.0" promptText="Enter Item Name">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="663.0" layoutY="98.0" prefHeight="34.0" prefWidth="477.0" promptText="Enter Customer Address">
+      <TextField layoutX="663.0" layoutY="98.0" prefHeight="34.0" prefWidth="477.0" promptText="Enter Item Description">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="64.0" layoutY="169.0" prefHeight="34.0" prefWidth="222.0" promptText="Enter Customer Contact Number">
+      <TextField layoutX="64.0" layoutY="169.0" prefHeight="34.0" prefWidth="222.0" promptText="Enter Item QTY">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="305.0" layoutY="169.0" prefHeight="34.0" prefWidth="306.0" promptText="Enter Customer Email Addres">
+      <TextField layoutX="305.0" layoutY="169.0" prefHeight="34.0" prefWidth="187.0" promptText="Enter Item Price">
          <font>
             <Font size="14.0" />
          </font>
@@ -41,11 +41,11 @@
       <Separator layoutX="14.0" layoutY="234.0" prefHeight="0.0" prefWidth="1166.0" />
       <TableView layoutX="46.0" layoutY="250.0" prefHeight="424.0" prefWidth="1113.0">
         <columns>
-          <TableColumn text="Customer ID" />
-          <TableColumn prefWidth="221.0" text="Customer Name" />
-            <TableColumn prefWidth="382.0" text="Customer Addres" />
-            <TableColumn prefWidth="192.0" text="Customer Contact Number" />
-            <TableColumn prefWidth="237.0" text="Customer Email" />
+          <TableColumn text="Item ID" />
+          <TableColumn prefWidth="274.0" text="Item Name" />
+            <TableColumn prefWidth="454.0" text="Item Description" />
+            <TableColumn prefWidth="132.0" text="Item QTY" />
+            <TableColumn prefWidth="172.0" text="Item Price" />
         </columns>
       </TableView>
       <Label layoutX="439.0" layoutY="15.0" text="Welecome To Item Form">

@@ -13,27 +13,27 @@
 
 <AnchorPane fx:id="mainContext" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
    <children>
-      <TextField layoutX="64.0" layoutY="98.0" prefHeight="34.0" prefWidth="163.0" promptText="Enter Customer Id">
+      <TextField fx:id="txtCustomerId" layoutX="64.0" layoutY="98.0" prefHeight="34.0" prefWidth="163.0" promptText="Enter Customer Id">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="246.0" layoutY="98.0" prefHeight="34.0" prefWidth="395.0" promptText="Enter Customer Name">
+      <TextField fx:id="txtCustomerName" layoutX="246.0" layoutY="98.0" prefHeight="34.0" prefWidth="395.0" promptText="Enter Customer Name">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="663.0" layoutY="98.0" prefHeight="34.0" prefWidth="477.0" promptText="Enter Customer Address">
+      <TextField fx:id="txtCustomerAddress" layoutX="663.0" layoutY="98.0" prefHeight="34.0" prefWidth="477.0" promptText="Enter Customer Address">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="64.0" layoutY="169.0" prefHeight="34.0" prefWidth="222.0" promptText="Enter Customer Contact Number">
+      <TextField fx:id="txtCustomerNo" layoutX="64.0" layoutY="169.0" prefHeight="34.0" prefWidth="222.0" promptText="Enter Customer Contact Number">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="305.0" layoutY="169.0" prefHeight="34.0" prefWidth="306.0" promptText="Enter Customer Email Addres">
+      <TextField fx:id="txtCustomerEmail" layoutX="305.0" layoutY="169.0" prefHeight="34.0" prefWidth="306.0" promptText="Enter Customer Email Addres">
          <font>
             <Font size="14.0" />
          </font>

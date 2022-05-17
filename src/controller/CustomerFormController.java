@@ -1,6 +1,6 @@
 package controller;
 
-import Dto.CustomerDTO;
+import dto.CustomerDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,16 +19,16 @@ public class CustomerFormController {
     public TextField txtCustomerAddress;
     public TextField txtCustomerNo;
     public TextField txtCustomerEmail;
-
+/*
     String id=txtCustomerId.getText();
     String name=txtCustomerName.getText();
     String address=txtCustomerAddress.getText();
     String no=txtCustomerNo.getText();
-    String email=txtCustomerEmail.getText();
+    String email=txtCustomerEmail.getText();*/
 
 
     public void btnSaveCustomer(ActionEvent actionEvent) {
-        CustomerDTO customerDTO = new CustomerDTO(id, name, address, no, email);
+
     }
 
     public void btnUpdateCustomer(ActionEvent actionEvent) {
