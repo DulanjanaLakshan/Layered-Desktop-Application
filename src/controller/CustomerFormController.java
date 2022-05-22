@@ -63,7 +63,6 @@ public class CustomerFormController {
         });
         txtCustomerAddress.setOnAction(event -> btnSaveCustomer.fire());
         loadAllCustomers();
-        generateNewId();
     }
 
     public void btnSaveCustomer(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
@@ -115,29 +114,5 @@ public class CustomerFormController {
         txtCustomerNo.clear();
         txtCustomerEmail.clear();
     }
-    private String generateNewId() {
-        try {
-            return customerBO.generateNewID();
-        } catch (SQLException e) {
-            new Alert(Alert.AlertType.ERROR, "Failed to generate a new id " + e.getMessage()).show();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
 
-
-        if (tblCustomer.getItems().isEmpty()) {
-            return "C001";
-        } else {
-            String id = getLastCustomerId();
-            int newCustomerId = Integer.parseInt(id.replace("C", "")) + 1;
-            return String.format("C%03d", newCustomerId);
-        }
-
-    }
-
-    private String getLastCustomerId() {
-        List<CustomerTM> tempCustomersList = new ArrayList<>(tblCustomer.getItems());
-        Collections.sort(tempCustomersList);
-        return tempCustomersList.get(tempCustomersList.size() - 1).getId();
-    }
 }
