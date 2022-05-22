@@ -13,39 +13,39 @@
 
 <AnchorPane fx:id="mainContext" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
    <children>
-      <TextField layoutX="64.0" layoutY="98.0" prefHeight="34.0" prefWidth="163.0" promptText="Enter Item Id">
+      <TextField fx:id="txtCode" layoutX="64.0" layoutY="98.0" prefHeight="34.0" prefWidth="163.0" promptText="Enter Item Id">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="246.0" layoutY="98.0" prefHeight="34.0" prefWidth="395.0" promptText="Enter Item Name">
+      <TextField fx:id="txtName" layoutX="246.0" layoutY="98.0" prefHeight="34.0" prefWidth="395.0" promptText="Enter Item Name">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="663.0" layoutY="98.0" prefHeight="34.0" prefWidth="477.0" promptText="Enter Item Description">
+      <TextField fx:id="txtDescription" layoutX="663.0" layoutY="98.0" prefHeight="34.0" prefWidth="477.0" promptText="Enter Item Description">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="64.0" layoutY="169.0" prefHeight="34.0" prefWidth="222.0" promptText="Enter Item QTY">
+      <TextField fx:id="txtQty" layoutX="64.0" layoutY="169.0" prefHeight="34.0" prefWidth="222.0" promptText="Enter Item QTY">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="305.0" layoutY="169.0" prefHeight="34.0" prefWidth="187.0" promptText="Enter Item Price">
+      <TextField fx:id="txtPrice" layoutX="305.0" layoutY="169.0" prefHeight="34.0" prefWidth="187.0" promptText="Enter Item Price">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
       <Separator layoutX="14.0" layoutY="234.0" prefHeight="0.0" prefWidth="1166.0" />
-      <TableView layoutX="46.0" layoutY="250.0" prefHeight="424.0" prefWidth="1113.0">
+      <TableView fx:id="tblItem" layoutX="46.0" layoutY="250.0" prefHeight="424.0" prefWidth="1113.0">
         <columns>
-          <TableColumn text="Item ID" />
-          <TableColumn prefWidth="274.0" text="Item Name" />
-            <TableColumn prefWidth="454.0" text="Item Description" />
-            <TableColumn prefWidth="132.0" text="Item QTY" />
-            <TableColumn prefWidth="172.0" text="Item Price" />
+          <TableColumn fx:id="colCode" text="Item ID" />
+          <TableColumn fx:id="colName" prefWidth="274.0" text="Item Name" />
+            <TableColumn fx:id="colDescription" prefWidth="454.0" text="Item Description" />
+            <TableColumn fx:id="colQty" prefWidth="132.0" text="Item QTY" />
+            <TableColumn fx:id="colPrice" prefWidth="172.0" text="Item Price" />
         </columns>
       </TableView>
       <Label layoutX="439.0" layoutY="15.0" text="Welecome To Item Form">
@@ -54,7 +54,7 @@
          </font>
       </Label>
       <Separator layoutX="458.0" layoutY="53.0" prefHeight="3.0" prefWidth="273.0" />
-      <JFXButton layoutX="823.0" layoutY="169.0" onAction="#btnSaveCustomer" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+      <JFXButton fx:id="btnSaveCustomer" layoutX="823.0" layoutY="169.0" onAction="#btnSaveCustomer" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
