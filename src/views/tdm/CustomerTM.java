@@ -1,16 +1,16 @@
-package entity;
+package views.tdm;
 
-public class Customer {
+public class CustomerTM implements Comparable<CustomerTM>{
     private String id;
     private String name;
     private String address;
     private String number;
     private String email;
 
-    public Customer() {
+    public CustomerTM() {
     }
 
-    public Customer(String id, String name, String address, String number, String email) {
+    public CustomerTM(String id, String name, String address, String number, String email) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -67,5 +67,10 @@ public class Customer {
                 ", number='" + number + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(CustomerTM o) {
+        return 0;
     }
 }

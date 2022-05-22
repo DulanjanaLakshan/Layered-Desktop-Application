@@ -39,13 +39,13 @@
          </font>
       </TextField>
       <Separator layoutX="14.0" layoutY="234.0" prefHeight="0.0" prefWidth="1166.0" />
-      <TableView layoutX="46.0" layoutY="250.0" prefHeight="424.0" prefWidth="1113.0">
+      <TableView fx:id="tblCustomer" layoutX="46.0" layoutY="250.0" prefHeight="424.0" prefWidth="1113.0">
         <columns>
-          <TableColumn text="Customer ID" />
-          <TableColumn prefWidth="221.0" text="Customer Name" />
-            <TableColumn prefWidth="382.0" text="Customer Addres" />
-            <TableColumn prefWidth="192.0" text="Customer Contact Number" />
-            <TableColumn prefWidth="237.0" text="Customer Email" />
+          <TableColumn fx:id="colId" text="Customer ID" />
+          <TableColumn fx:id="colName" prefWidth="221.0" text="Customer Name" />
+            <TableColumn fx:id="colAddress" prefWidth="382.0" text="Customer Addres" />
+            <TableColumn fx:id="colNumber" prefWidth="192.0" text="Customer Contact Number" />
+            <TableColumn fx:id="colEmail" prefWidth="237.0" text="Customer Email" />
         </columns>
       </TableView>
       <Label layoutX="409.0" layoutY="14.0" text="Welecome To Customer Form">
@@ -54,7 +54,7 @@
          </font>
       </Label>
       <Separator layoutX="458.0" layoutY="53.0" prefHeight="3.0" prefWidth="273.0" />
-      <JFXButton layoutX="823.0" layoutY="169.0" onAction="#btnSaveCustomer" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+      <JFXButton fx:id="btnSaveCustomer" layoutX="823.0" layoutY="169.0" onAction="#btnSaveCustomer" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

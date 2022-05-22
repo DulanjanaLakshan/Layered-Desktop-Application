@@ -1,17 +1,21 @@
 package dto;
 
 public class CustomerDTO {
-    String id;
-    String name;
-    String address;
+    private String id;
+    private String name;
+    private String address;
+    private String number;
+    private String email;
 
     public CustomerDTO() {
     }
 
-    public CustomerDTO(String id, String name, String address) {
+    public CustomerDTO(String id, String name, String address, String number, String email) {
         this.id = id;
         this.name = name;
         this.address = address;
+        this.number = number;
+        this.email = email;
     }
 
     public String getId() {
@@ -38,12 +42,30 @@ public class CustomerDTO {
         this.address = address;
     }
 
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
-        return "CustomerDTO{" +
+        return "CustomerTM{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
+                ", number='" + number + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

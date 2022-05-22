@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CustomerDaoImpl implements CustomerDAO {
     @Override
     public boolean add(Customer dto) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate("INSERT INTO Customer (id,name, address) VALUES (?,?,?)", dto.getId(), dto.getName(), dto.getAddress());
+        return CrudUtil.executeUpdate("INSERT INTO Customer (id,name, address, number, email) VALUES (?,?,?,?,?)", dto.getId(), dto.getName(), dto.getAddress(),dto.getNumber(),dto.getEmail());
     }
 
     @Override
@@ -22,14 +22,14 @@ public class CustomerDaoImpl implements CustomerDAO {
 
     @Override
     public boolean update(Customer dto) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate("UPDATE Customer SET name=?, address=? WHERE id=?", dto.getName(), dto.getAddress(), dto.getId());
+        return CrudUtil.executeUpdate("UPDATE Customer SET name=?, address=?, number=?,email=? WHERE id=?", dto.getName(), dto.getAddress(),dto.getNumber(),dto.getEmail(), dto.getId());
     }
 
     @Override
     public Customer search(String id) throws SQLException, ClassNotFoundException {
         ResultSet rst = CrudUtil.executeQuery("SELECT * FROM Customer WHERE id=?", id);
         rst.next();
-        return new Customer(id, rst.getString("name"), rst.getString("address"));
+        return new Customer(id, rst.getString("name"), rst.getString("address"),rst.getString("number"),rst.getString("email"));
     }
 
     @Override
@@ -37,7 +37,7 @@ public class CustomerDaoImpl implements CustomerDAO {
         ArrayList<Customer> allCustomers = new ArrayList();
         ResultSet rst = CrudUtil.executeQuery("SELECT * FROM Customer");
         while (rst.next()) {
-            allCustomers.add(new Customer(rst.getString("id"), rst.getString("name"), rst.getString("address")));
+            allCustomers.add(new Customer(rst.getString("id"), rst.getString("name"), rst.getString("address"),rst.getString("number"),rst.getString("email")));
         }
         return allCustomers;
     }
